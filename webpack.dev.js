@@ -1,8 +1,12 @@
 const path = require('path')
 const webpack = require('webpack')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebPackPlugin = require("html-webpack-plugin")
+<<<<<<< Updated upstream
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
+=======
+>>>>>>> Stashed changes
 module.exports = {
     entry: './src/client/index.js',
     mode: 'development',
@@ -22,6 +26,7 @@ module.exports = {
             template: "./src/client/views/index.html",
             filename: "./index.html",
         }),
+<<<<<<< Updated upstream
         new CleanWebpackPlugin({
             // Simulate the removal of files
             dry: true,
@@ -31,5 +36,8 @@ module.exports = {
             cleanStaleWebpackAssets: true,
             protectWebpackAssets: false
         })
+=======
+        new CleanWebpackPlugin(),
+>>>>>>> Stashed changes
     ]
 }
