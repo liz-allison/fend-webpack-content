@@ -4,7 +4,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin")
 
 module.exports = {
     entry: './src/client/index.js',
-    mode: 'none',
+    mode: 'production',
     devtool: 'source-map',
     module: {
         rules: [
